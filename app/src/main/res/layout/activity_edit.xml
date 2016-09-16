@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.navanee.inclass03.EditActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/edit_title"
+        android:id="@+id/EditorTitle"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sName"
+        android:layout_below="@+id/EditorTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/name_hint"
+        android:visibility="invisible"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/sEmail"
+        android:layout_below="@+id/sName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/email_hint"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/dept_label"
+        android:id="@+id/deptLbl"
+        android:layout_below="@+id/sEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deptLbl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/deptRG"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dept_1"
+            android:id="@+id/deptSIS"
+            android:checked="true"
+            android:layout_marginTop="8dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dept_2"
+            android:id="@+id/deptCS"
+            android:layout_marginTop="8dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dept_3"
+            android:id="@+id/deptBIO"
+            android:layout_marginTop="8dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dept_4"
+            android:id="@+id/deptOthers"
+            android:layout_marginTop="8dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mood_label"
+        android:id="@+id/moodLbl"
+        android:layout_below="@+id/deptRG"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sMood"
+        android:layout_below="@+id/moodLbl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_label_2"
+        android:id="@+id/sSubmit"
+        android:layout_below="@+id/sMood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

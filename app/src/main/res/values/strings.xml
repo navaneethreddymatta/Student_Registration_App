@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">InClass03</string>
+
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+    <string name="dept_label">Department:</string>
+    <string name="dept_1">SIS</string>
+    <string name="dept_2">CS</string>
+    <string name="dept_3">BIO</string>
+    <string name="dept_4">Others</string>
+    <string name="mood_label">Your Current Mood:</string>
+    <string name="button_label">Submit</string>
+    <string name="button_label_2">Save</string>
+
+    <string name="activity_title">Student Information</string>
+    <string name="edit_title">Edit Information</string>
+    <string name="name_label">Name:</string>
+    <string name="email_label">Email:</string>
+    <string name="department_label">Department:</string>
+    <string name="moodValue_label">Mood:</string>
+</resources>
